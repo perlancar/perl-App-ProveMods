@@ -79,7 +79,7 @@ just see what distributions will get tested. An example output:
 The above example shows that I have the distribution directories locally on my
 `~/repos`, except for one 'Regexp::Pattern::License'.
 
-If we reinvoke the above command without the `-n`, *prove-rdeps* will actually
+If we reinvoke the above command without the `-n`, *prove-mods* will actually
 run `prove` on each directory and provide a summary at the end. Example output:
 
     % prove-mods '^Regexp::Pattern'
@@ -102,7 +102,7 @@ counts as a 412 error (Precondition Failed).
 When a distribution's test fails, this counts as a 500 error (Error). Otherwise,
 the status is 200 (OK).
 
-*prove-rdeps* will return status 200 (OK) with the status of each dist. It will
+*prove-mods* will return status 200 (OK) with the status of each dist. It will
 exit 0 if all distros are successful, otherwise it will exit 1.
 
 _
